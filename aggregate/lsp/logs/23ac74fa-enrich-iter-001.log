@@ -1,0 +1,81 @@
+[2026-04-17T21:05:04Z] === ENRICH ITERATION 1 START | repo=huggingface/huggingface_hub sha=23ac74fa ===
+[2026-04-17T21:05:04Z] [iter=1] PHASE START: enrich repo=huggingface/huggingface_hub sha=23ac74fa runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/23ac74fa-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/23ac74fafdbac7a96fe9395da3a17ac23df81ff8.nq.gz
+[2026-04-17T21:05:04Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=76 MB
+[2026-04-17T21:05:20Z] [iter=1] AST store loaded triples=1990800 load_secs=14 mem_mb=946 MB
+[2026-04-17T21:05:20Z] [iter=1] Step 2: Finding LSP targets mem_mb=946 MB
+[2026-04-17T21:05:25Z] [iter=1] LSP targets found call_sites=13113 imports=1075 extends=311 implements=0 secs=5
+[2026-04-17T21:05:29Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=946 MB
+[2026-04-17T21:05:41Z] [iter=1] Position index built positions=136399 nodes_with_types=176341 secs=11 mem_mb=946 MB
+[2026-04-17T21:05:41Z] [iter=1] Step 3: Starting LSP resolution mem_mb=946 MB already_completed_types=[] already_completed_files=0
+[2026-04-17T21:05:41Z] [iter=1] Resolving target type target_type=call_site count=13113
+[2026-04-17T21:05:42Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=0.6 files_done=0 resolved=0 errors=0 current=tests/conftest.py
+[2026-04-17T21:09:33Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=4.5 files_done=3 resolved=83 errors=294 current=tests/testing_utils.py
+[2026-04-17T21:12:58Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=7.9 files_done=5 resolved=343 errors=554 current=src/huggingface_hub/utils/_paths.py
+[2026-04-17T21:14:14Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=9.2 files_done=7 resolved=416 errors=652 current=src/huggingface_hub/commands/upload.py
+[2026-04-17T21:19:12Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=14.1 files_done=9 resolved=537 errors=1033 current=utils/_legacy_check_future_compatible_signatures.py
+[2026-04-17T21:19:45Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=14.7 files_done=10 resolved=562 errors=1075 current=tests/test_cli.py
+[2026-04-17T21:22:10Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=17.1 files_done=11 resolved=621 errors=1262 current=src/huggingface_hub/file_download.py
+[2026-04-17T21:24:20Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=19.3 files_done=12 resolved=815 errors=1431 current=src/huggingface_hub/inference/_generated/_async_client.py
+[2026-04-17T21:25:48Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=20.7 files_done=13 resolved=907 errors=1545 current=tests/test_inference_text_generation.py
+[2026-04-17T21:27:35Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=22.5 files_done=15 resolved=956 errors=1685 current=src/huggingface_hub/inference/_common.py
+[2026-04-17T21:28:16Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=23.2 files_done=16 resolved=982 errors=1739 current=tests/test_utils_cache.py
+[2026-04-17T21:30:58Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=25.9 files_done=17 resolved=1118 errors=1952 current=tests/test_hf_api.py
+[2026-04-17T21:46:03Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=41.0 files_done=18 resolved=1710 errors=3118 current=src/huggingface_hub/hf_api.py
+[2026-04-17T21:56:43Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=51.7 files_done=19 resolved=1924 errors=3942 current=tests/test_repocard.py
+[2026-04-17T21:59:01Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=53.9 files_done=20 resolved=2059 errors=4120 current=src/huggingface_hub/_snapshot_download.py
+[2026-04-17T22:00:30Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=55.4 files_done=22 resolved=2140 errors=4235 current=tests/test_repocard_data.py
+[2026-04-17T22:01:04Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=56.0 files_done=23 resolved=2159 errors=4280 current=src/huggingface_hub/serialization/_torch.py
+[2026-04-17T22:02:04Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=57.0 files_done=24 resolved=2203 errors=4354 current=src/huggingface_hub/repository.py
+[2026-04-17T22:04:31Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=59.4 files_done=25 resolved=2328 errors=4544 current=tests/test_lfs.py
+[2026-04-17T22:06:42Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=61.6 files_done=26 resolved=2353 errors=4717 current=src/huggingface_hub/hub_mixin.py
+[2026-04-17T22:07:31Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=62.4 files_done=27 resolved=2410 errors=4778 current=src/huggingface_hub/utils/_cache_manager.py
+[2026-04-17T22:08:23Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=63.3 files_done=28 resolved=2479 errors=4846 current=src/huggingface_hub/inference/_client.py
+[2026-04-17T22:09:24Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=64.3 files_done=29 resolved=2580 errors=4925 current=src/huggingface_hub/commands/lfs.py
+[2026-04-17T22:10:12Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=65.1 files_done=31 resolved=2632 errors=4987 current=tests/test_serialization.py
+[2026-04-17T22:10:50Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=65.8 files_done=33 resolved=2775 errors=5035 current=src/huggingface_hub/constants.py
+[2026-04-17T22:11:32Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=66.5 files_done=35 resolved=2847 errors=5089 current=src/huggingface_hub/_commit_api.py
+[2026-04-17T22:12:27Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=67.4 files_done=36 resolved=2929 errors=5161 current=tests/test_utils_git_credentials.py
+[2026-04-17T22:14:07Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=69.1 files_done=38 resolved=3071 errors=5292 current=src/huggingface_hub/fastai_utils.py
+[2026-04-17T22:14:56Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=69.9 files_done=40 resolved=3201 errors=5354 current=src/huggingface_hub/_space_api.py
+[2026-04-17T22:16:10Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=71.1 files_done=44 resolved=3243 errors=5449 current=tests/test_hub_mixin.py
+[2026-04-17T22:17:18Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=72.2 files_done=45 resolved=3273 errors=5538 current=tests/test_commit_scheduler.py
+[2026-04-17T22:18:39Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=73.6 files_done=46 resolved=3307 errors=5645 current=src/huggingface_hub/lfs.py
+[2026-04-17T22:19:47Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=74.7 files_done=47 resolved=3353 errors=5734 current=tests/test_local_folder.py
+[2026-04-17T22:21:01Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=75.9 files_done=50 resolved=3435 errors=5831 current=src/huggingface_hub/repocard.py
+[2026-04-17T22:21:34Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=76.5 files_done=51 resolved=3490 errors=5873 current=utils/generate_inference_types.py
+[2026-04-17T22:22:13Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=77.1 files_done=52 resolved=3513 errors=5925 current=src/huggingface_hub/utils/_token.py
+[2026-04-17T22:22:46Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=77.7 files_done=54 resolved=3552 errors=5968 current=tests/test_inference_types.py
+[2026-04-17T22:25:23Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=80.3 files_done=56 resolved=3638 errors=6173 current=src/huggingface_hub/commands/scan_cache.py
+[2026-04-17T22:26:46Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=81.7 files_done=58 resolved=3696 errors=6282 current=src/huggingface_hub/commands/huggingface_cli.py
+[2026-04-17T22:28:00Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=82.9 files_done=61 resolved=3809 errors=6378 current=tests/test_utils_http.py
+[2026-04-17T22:28:46Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=83.7 files_done=62 resolved=3874 errors=6437 current=tests/test_utils_sha.py
+[2026-04-17T22:29:22Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=84.3 files_done=65 resolved=3962 errors=6484 current=tests/test_utils_tqdm.py
+[2026-04-17T22:30:29Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=85.4 files_done=67 resolved=4075 errors=6572 current=src/huggingface_hub/utils/_validators.py
+[2026-04-17T22:31:00Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=85.9 files_done=69 resolved=4119 errors=6613 current=tests/test_utils_deprecation.py
+[2026-04-17T22:31:50Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=86.8 files_done=71 resolved=4164 errors=6678 current=tests/test_cache_no_symlinks.py
+[2026-04-17T22:32:25Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=87.3 files_done=72 resolved=4205 errors=6724 current=tests/test_utils_paths.py
+[2026-04-17T22:33:28Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=88.4 files_done=74 resolved=4324 errors=6807 current=src/huggingface_hub/utils/_fixes.py
+[2026-04-17T22:34:02Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=89.0 files_done=77 resolved=4355 errors=6849 current=src/huggingface_hub/commands/upload_large_folder.py
+[2026-04-17T22:34:51Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=89.8 files_done=79 resolved=4374 errors=6914 current=src/huggingface_hub/commands/user.py
+[2026-04-17T22:35:36Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=90.5 files_done=81 resolved=4416 errors=6973 current=src/huggingface_hub/commands/download.py
+[2026-04-17T22:36:34Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=91.5 files_done=85 resolved=4498 errors=7049 current=src/huggingface_hub/commands/repo_files.py
+[2026-04-17T22:37:09Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=92.1 files_done=89 resolved=4535 errors=7094 current=contrib/timm/test_timm.py
+[2026-04-17T22:37:39Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=92.6 files_done=92 resolved=4584 errors=7134 current=tests/test_utils_hf_folder.py
+[2026-04-17T22:38:10Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=93.1 files_done=95 resolved=4600 errors=7175 current=src/huggingface_hub/_tensorboard_logger.py
+[2026-04-17T22:38:54Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=93.8 files_done=100 resolved=4658 errors=7232 current=tests/test_utils_validators.py
+[2026-04-17T22:39:26Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=94.4 files_done=104 resolved=4710 errors=7273 current=tests/test_utils_telemetry.py
+[2026-04-17T22:40:14Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=95.2 files_done=107 resolved=4767 errors=7337 current=src/huggingface_hub/utils/_safetensors.py
+[2026-04-17T22:40:44Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=95.7 files_done=113 resolved=4839 errors=7376 current=src/huggingface_hub/serialization/_tensorflow.py
+[2026-04-17T22:41:17Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=96.2 files_done=115 resolved=4867 errors=7419 current=tests/test_tf_import.py
+[2026-04-17T22:41:51Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=96.8 files_done=121 resolved=4890 errors=7463 current=tests/test_init_lazy_loading.py
+[2026-04-17T22:42:22Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=97.3 files_done=125 resolved=4909 errors=7504 current=tests/test_utils_pagination.py
+[2026-04-17T22:43:00Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=97.9 files_done=133 resolved=4973 errors=7554 current=src/huggingface_hub/utils/_cache_assets.py
+[2026-04-17T22:43:23Z] [iter=1] Target type resolved target_type=call_site resolved=5003 errors=7583 secs=5862 mem_mb=946 MB
+[2026-04-17T22:43:23Z] [iter=1] Resolving target type target_type=import_statement count=1075
+[2026-04-17T22:43:30Z] [iter=1] HEARTBEAT target_type=import_statement elapsed_min=98.4 files_done=90 resolved=713 errors=0 current=src/huggingface_hub/commands/version.py
+[2026-04-17T22:43:35Z] [iter=1] Target type resolved target_type=import_statement resolved=1010 errors=0 secs=12 mem_mb=946 MB
+[2026-04-17T22:43:35Z] [iter=1] Resolving target type target_type=extends_clause count=311
+[2026-04-17T22:43:40Z] [iter=1] Target type resolved target_type=extends_clause resolved=302 errors=0 secs=4 mem_mb=946 MB
+[2026-04-17T22:43:54Z] [iter=1] Step 5: Writing final enrichment file triples=134736
+[2026-04-17T22:43:57Z] [iter=1] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/23ac74fafdbac7a96fe9395da3a17ac23df81ff8.nq.gz size_kb=3147
+[2026-04-17T22:43:57Z] [iter=1] PHASE END: enrich elapsed_s=5932 elapsed_min=98.9 total_triples=134736
